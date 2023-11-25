@@ -1,0 +1,232 @@
+.icon_link{
+    font-weight: bold;
+    font-size: 15px;
+}
+.icon_link:hover{
+    color:yellow;
+}
+.topnav{
+    display: flex;
+}
+.arrow{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.text_hover {
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
+    /* color: #333; */
+  }
+  
+  .text_hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top:25px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color:yellow; 
+    transition: width 0.3s ease;
+  }
+  
+  .text_hover:hover::before {
+    width: 100%;
+  }
+.right_container_nav:hover{
+    cursor: pointer;
+}
+/* .shop:hover + .hower_menue_shop, .hower_menue_shop:hover{
+    display: flex;
+} */
+.hower_menue_shop{
+    
+    position: absolute;
+    width: 100vw;
+    height: 48vh;
+    background-color: #212122;
+    top: 80px;
+    right: 0px;
+    padding: 60px;
+    display: none;
+    gap:40%
+}
+.hower_menue_shop h2{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    width: 65px;
+}
+.hower_menue_shop li{
+    font-weight: bold;
+    padding: 2px;
+}
+
+/* Not working on hover */
+/* .shop:hover .hower_menue_shop{
+    display: flex;
+} */
+
+.hower_menue_brands{
+    position: absolute;
+    background-color: black;
+    top: 70px;
+    left: 40px;
+    padding: 20px;
+    width: auto;
+    display: none;
+
+}
+.hower_menue_brands li{
+    font-weight: bold;
+    padding: 2px;
+}
+.brands:hover .hower_menue_brands{
+    display: block;
+}
+.login{
+    display: none;
+}
+.back_brand{
+    display: none;
+}
+ .hamburger:hover{
+    cursor: pointer;
+}
+.shop_click{
+    display: none;
+}
+.apparol_out{
+    display: none;
+}
+.home_out{
+    display: none;
+}
+
+@media (min-width:1024px) {
+    .hamburger{
+        display: none;
+    }
+    
+}
+@media (max-width:1024px) {
+    .topnav{
+        position: fixed;
+        flex-direction: column;
+        background-color: black;
+        padding: 20px;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        /* transition: 0.3s ease-in-out; */
+        /* display: none; */
+    }
+    .text_hover{
+        font-size: larger;
+    }
+    .login{
+        display: flex;
+        position: absolute;
+        width: 50px;
+        gap: 8px;
+        font-size: small;
+        left: 20px;
+        top:89vh;
+        color: white;
+        z-index: 11;
+    }
+    .up{
+        top:127px;
+    }
+    .down{
+        top: 335px;
+        z-index: 7;
+    }
+    .arrow{
+        /* display: none; */
+        transform: rotate(0deg);
+    }
+    .brands span{
+        position: absolute;
+        left: 88vw;
+    }
+    .shop span{
+        position: absolute;
+        left: 88vw;
+    }
+    .hower_menue_brands{
+        z-index: 12;
+    }
+    .back_brand{
+        display: block;
+    }
+    .hower_menue_brands{
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 127px;
+        position: fixed;
+        /* background-color: red; */
+    }
+    .hower_menue_brands li{
+        font-size: larger;
+        padding: 5px;
+    }
+    .shop_click{
+        display: flex;
+        position: fixed;
+        top: 127px;
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+        z-index: 12;
+        left: 0;
+
+    }
+    .shop_click li {
+        padding-top: 15px;
+    }
+    .shop_click .ar{
+        position:relative;
+        left: 89vw;
+        top: -22px;
+        
+    }
+    .apparol_out{
+        display: flex;
+        position: fixed;
+        top: 127px;
+        z-index: 14;
+        background-color: black;
+        left: 0;
+        padding: 20px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .apparol_out li{
+        font-size: larger;
+        padding-top: 10px;
+    }
+    .home_out{
+        display: flex;
+        position: fixed;
+        top: 127px;
+        z-index: 14;
+        background-color: black;
+        left: 0;
+        padding: 20px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .home_out li{
+        font-size: larger;
+        padding-top: 10px;
+    }
+}
+@media (max-width:763px) {
+    .profile{
+        display: none;
+    }
+}

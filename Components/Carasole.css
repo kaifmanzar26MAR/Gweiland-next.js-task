@@ -1,0 +1,43 @@
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+  }
+  
+  .carousel-text p {
+    font-size: 4.4rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    line-height: 80px;
+    z-index: 10;
+    color: white;
+  }
+  .overlay{
+    background-color: black;
+    position: fixed;
+    top: 50vh;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%,-50%);
+    opacity: 0.2;
+    z-index: 15;
+  }
+  .carousel-text button{
+    width: 150px;
+    padding: 15px;
+    font-size: large;
+    color:black;
+    font-weight: bold;
+    background-color: white;
+    position: relative;
+    top: 70px;
+    border-radius:40px 40px ;
+  }
+#btn:hover{
+    color:white;
+    background-color: gray;
+    border: 2px solid white;
+    cursor: pointer;
+  }
