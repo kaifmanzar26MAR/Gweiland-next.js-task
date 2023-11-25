@@ -10,12 +10,12 @@ const Carasole = () => {
     {text:"premium zip hoddies",img:"/images/cara4.jpg",dir:"100px"},
     {text:"heritage woman's tank",img:"/images/cara5.jpg",dir:"1000px"}]
   return (
-    <>
+    <><div>
       <Carousel className='carasousel'
         autoPlay={true}
         animation='slide'
         indicators={false}
-        
+        speed='2000'
         navButtonsAlwaysVisible={false}
         cycleNavigation={true}
         infiniteLoop={true}
@@ -49,6 +49,7 @@ const Carasole = () => {
                 })
             }
         </Carousel>
+        </div>
     </>
   )
 }

@@ -2,10 +2,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 20;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -70%);
     text-align: center;
     color: #fff; /* Text color */
+    animation: pop 3s infinite;
   }
   .banner_img{
     height: 100vh;
@@ -19,6 +21,18 @@
     line-height: 10vmin;
     z-index: 10;
     color: white;
+    margin-top: 0px;
+    
+  }
+  @keyframes pop {
+    0%{
+      margin-top: 200px;
+      opacity: 0;
+    }
+    100%{
+      margin-top: 0px;
+      opacity: 1;
+    }
   }
   .overlay{
     background-color: black;
@@ -37,13 +51,16 @@
     color:black;
     font-weight: bold;
     background-color: white;
-    position: relative;
-    top: 70px;
+    position: fixed;
+    top: 230px;
+    left: 20px;
     border-radius:40px 40px ;
+    z-index: 23;
   }
-#btn:hover{
+.carousel-text button:hover{
     color:white;
-    background-color: gray;
+    background-color: transparent;
     border: 2px solid white;
     cursor: pointer;
+    
   }
