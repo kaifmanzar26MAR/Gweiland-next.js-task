@@ -1,12 +1,11 @@
-"use client"
-import React, { useEffect } from 'react'
+import React from 'react'
+import { useEffect } from 'react';
 import "./NavBar.css"
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react'
 import { FaTwitter,FaInstagram,FaFacebook,FaHamburger,FaUser,FaCartPlus,FaSearch} from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
-import { document } from 'postcss';
 
 
 
@@ -56,17 +55,7 @@ const NavBar = () => {
     const close_home=()=>{
         document.getElementById('hout').style.display="none";
     }
-    useEffect(()=>{
-        setNavBar(false);
-        document.getElementById('hout').style.display="none";
-        document.getElementById('apo').style.display="none";
-        document.getElementById('sc').style.display="none";
-        document.getElementById('xxxup').style.display="none";
-        document.getElementById('xxxdw').style.display="none";
-        document.getElementById('br_h').style.display="none";
-    });
-    
-
+   
   return (
     <>
         <nav className='w-full bg-neutral-800 top-0 left-0 right-0 z-10 sticky'>
@@ -76,8 +65,8 @@ const NavBar = () => {
                 </div>
                 
                 <div className="topnav up text-white  gap-6" id='xxxup'>
-                    <Link href="#home" className='icon_link text_hover brands'  onClick={()=>brands_fun()}>brands <span className='arrow'><IoIosArrowForward size={15} /></span></Link>
-                    <Link href="#news" className='icon_link text_hover shop'  onClick={()=>shop_fun()}>shop <span className='arrow'><IoIosArrowForward size={15} /></span></Link>
+                    <Link href="#home" className='icon_link text_hover brands' onClick={()=>brands_fun()}>brands <span className='arrow'><IoIosArrowForward size={15} /></span></Link>
+                    <Link href="#news" className='icon_link text_hover shop' onClick={()=>shop_fun()}>shop <span className='arrow'><IoIosArrowForward size={15} /></span></Link>
                     <Link href="#contact" className='icon_link text_hover'>premium</Link>
                     <Link href="#about" className='icon_link text_hover'>gift cards</Link>
                     
@@ -96,7 +85,7 @@ const NavBar = () => {
                         <li><Link className='text_hover' href="/">vudu brigada</Link></li>
                     </ol>
                 </div>
-                <div className="hower_menue_shop" id='h_m_s'>
+                <div className="hower_menue_shop">
                     <div className="apparol">
                         <h2 className='text_hover'>apparol</h2>
                         <ol>

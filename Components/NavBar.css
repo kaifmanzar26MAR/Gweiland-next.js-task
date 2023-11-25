@@ -64,9 +64,9 @@
 }
 
 /* Not working on hover */
-/* .shop:hover .hower_menue_shop{
+.shop:hover .hower_menue_shop{
     display: flex;
-} */
+}
 
 .hower_menue_brands{
     position: absolute;
@@ -108,6 +108,7 @@
     .hamburger{
         display: none;
     }
+    
     
 }
 @media (max-width:1024px) {
