@@ -19,6 +19,7 @@
     width: calc(250px * 11);
     animation: scroll 40s linear infinite;
     overflow: hidden;
+    /* pointer-events: none; */
 
 }
 @keyframes scroll {

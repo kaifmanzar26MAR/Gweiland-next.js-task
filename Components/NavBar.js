@@ -65,47 +65,53 @@ const NavBar = () => {
                 </div>
                 
                 <div className="topnav up text-white  gap-6" id='xxxup'>
-                    <Link href="#home" className='icon_link text_hover brands' onClick={()=>brands_fun()}>brands <span className='arrow'><IoIosArrowForward size={15} /></span></Link>
-                    <Link href="#news" className='icon_link text_hover shop' onClick={()=>shop_fun()}>shop <span className='arrow'><IoIosArrowForward size={15} /></span></Link>
+                    <Link href="#home" className='icon_link text_hover brands' onClick={()=>brands_fun()}>brands <span className='arrow'><IoIosArrowForward size={15} /></span>
+                    <div className="hower_menue_brands" id='br_h'>
+                        <ol>
+                            <li><Link  href="/" className='back_brand' onClick={()=>{close_brand()}}>{'<'}- &nbsp; brands</Link></li>
+                            <li><Link className='text_hover' href="/">all brands</Link></li>
+                            <li><Link className='text_hover' href="/">$hosky</Link></li>
+                            <li><Link className='text_hover' href="/">bitfins</Link></li>
+                            <li><Link className='text_hover' href="/">cardano stonerz club</Link></li>
+                            <li><Link className='text_hover' href="/">cryptoraggies</Link></li>
+                            <li><Link className='text_hover' href="/">danketsu</Link></li>
+                            <li><Link className='text_hover' href="/">future fast</Link></li>
+                            <li><Link className='text_hover' href="/">pendulum</Link></li>
+                            <li><Link className='text_hover' href="/">vudu brigada</Link></li>
+                        </ol>
+                    </div>
+                    </Link>
+                    <Link href="#news" className='icon_link text_hover shop' onClick={()=>shop_fun()}>shop <span className='arrow'><IoIosArrowForward size={15} /></span>
+
+                    <div className="hower_menue_shop">
+                        <div className="apparol">
+                            <h2 className='text_hover'>apparol</h2>
+                            <ol>
+                                <li><Link className='text_hover' href="/">unisex hoodies</Link></li>
+                                <li><Link className='text_hover' href="/">unisex zip hoodies</Link></li>
+                                <li><Link className='text_hover' href="/">unisex sweatshirts</Link></li>
+                                <li><Link className='text_hover' href="/">unisex tees</Link></li>
+                                <li><Link className='text_hover' href="/">women's tanks</Link></li>
+                                <li><Link className='text_hover' href="/">unisex tankss</Link></li>
+                            </ol>
+                        </div>
+                        <div className="home">
+                        <h2 className='text_hover'>home</h2>
+                            <ol>
+                                <li><Link className='text_hover' href="/">phone case</Link></li>
+                                <li><Link className='text_hover' href="/">framed posters</Link></li>
+                                <li><Link className='text_hover' href="/">posters</Link></li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    </Link>
                     <Link href="#contact" className='icon_link text_hover'>premium</Link>
                     <Link href="#about" className='icon_link text_hover'>gift cards</Link>
                     
                 </div>
-                <div className="hower_menue_brands" id='br_h'>
-                    <ol>
-                        <li><Link  href="/" className='back_brand' onClick={()=>{close_brand()}}>{'<'}- &nbsp; brands</Link></li>
-                        <li><Link className='text_hover' href="/">all brands</Link></li>
-                        <li><Link className='text_hover' href="/">$hosky</Link></li>
-                        <li><Link className='text_hover' href="/">bitfins</Link></li>
-                        <li><Link className='text_hover' href="/">cardano stonerz club</Link></li>
-                        <li><Link className='text_hover' href="/">cryptoraggies</Link></li>
-                        <li><Link className='text_hover' href="/">danketsu</Link></li>
-                        <li><Link className='text_hover' href="/">future fast</Link></li>
-                        <li><Link className='text_hover' href="/">pendulum</Link></li>
-                        <li><Link className='text_hover' href="/">vudu brigada</Link></li>
-                    </ol>
-                </div>
-                <div className="hower_menue_shop">
-                    <div className="apparol">
-                        <h2 className='text_hover'>apparol</h2>
-                        <ol>
-                            <li><Link className='text_hover' href="/">unisex hoodies</Link></li>
-                            <li><Link className='text_hover' href="/">unisex zip hoodies</Link></li>
-                            <li><Link className='text_hover' href="/">unisex sweatshirts</Link></li>
-                            <li><Link className='text_hover' href="/">unisex tees</Link></li>
-                            <li><Link className='text_hover' href="/">women's tanks</Link></li>
-                            <li><Link className='text_hover' href="/">unisex tankss</Link></li>
-                        </ol>
-                    </div>
-                    <div className="home">
-                    <h2 className='text_hover'>home</h2>
-                        <ol>
-                            <li><Link className='text_hover' href="/">phone case</Link></li>
-                            <li><Link className='text_hover' href="/">framed posters</Link></li>
-                            <li><Link className='text_hover' href="/">posters</Link></li>
-                        </ol>
-                    </div>
-                </div>
+                
+                
 
                 {/* clicke menue */}
                 <div className="shop_click" id='sc'>

@@ -46,11 +46,12 @@
     width: 100vw;
     height: 48vh;
     background-color: #212122;
-    top: 80px;
-    right: 0px;
+    top: 30px;
+    left: -150px;
     padding: 60px;
     display: none;
-    gap:40%
+    color:white;
+    gap:40%;
 }
 .hower_menue_shop h2{
     font-size: large;
@@ -70,11 +71,12 @@
 
 .hower_menue_brands{
     position: absolute;
-    background-color: black;
-    top: 70px;
-    left: 40px;
+    background-color: #212122;
+    top: 30px;
+    color: white;
+    /* left: -10px; */
     padding: 20px;
-    width: auto;
+    width: 200px;
     display: none;
 
 }
@@ -224,6 +226,12 @@
     .home_out li{
         font-size: larger;
         padding-top: 10px;
+    }
+    .brands:hover .hower_menue_brands{
+        display: none;
+    }
+    .shop:hover .hower_menue_shop{
+        display: none;
     }
 }
 @media (max-width:763px) {

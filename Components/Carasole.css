@@ -2,15 +2,21 @@
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff; /* Text color */
   }
+  .banner_img{
+    height: 100vh;
+    width: fit-content;
+    object-fit: cover;
+  }
   
   .carousel-text p {
-    font-size: 4.4rem; /* Adjust the font size as needed */
+    font-size: 10vmin; /* Adjust the font size as needed */
     font-weight: bold;
-    line-height: 80px;
+    line-height: 10vmin;
     z-index: 10;
     color: white;
   }
